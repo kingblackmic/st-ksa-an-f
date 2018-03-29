@@ -27,4 +27,4 @@ client.user.setPresence({
 
 
 
- client.login("token");
+ client.login("MzQ2MTMxMzc1OTkwMjQzMzQw.DZ5dZg.Zl1QnGA8Knt0rLlyAhmRq6Ad4pA");
