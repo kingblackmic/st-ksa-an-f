@@ -12,7 +12,7 @@ client.user.setPresence({
   status: 'online', //الحال
   game: { 
      type: 0,
-     name: 'WEEK_END 🔥',    
+     name: 'خميس يدور عليكم  🔥',    
      details: `🎈خميس ومالي خلق ازعل🎈`,  
      url: 'http://twitch.tv/Streammingg',
      state: `انا فوق السحاب هناك شوفوني ☁`,
