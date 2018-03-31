@@ -29,6 +29,6 @@ client.user.setPresence({
 
 
 
- client.login("MzQ2MTMxMzc1OTkwMjQzMzQw.DZ5dZg.Zl1QnGA8Knt0rLlyAhmRq6Ad4pA"); //توكن حسابك
+ client.login("NDI5MzgwNzYyNTM0Njc0NDMy.DaDznw.QxTgfCCu3C7Lv9DRnQZ8K0BgsfU"); //توكن حسابك
 
 
