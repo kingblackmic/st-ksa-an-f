@@ -30,6 +30,40 @@ client.user.setPresence({
 
 
 
+
+
+
+
+
+
+
+client.on('message', message => {
+ if (message.content.includes('discord.gg')){
+                     if(!message.channel.guild) return message.reply ('')
+                 if (!message.member.hasPermissions(['MANAGE_MESSAGES'])){
+    message.channel.send('ban <@' + message.author.id + '>')
+    message.delete() 
+    }
+ }
+       if (message.content.startsWith("ban ")) {
+          if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply();
+          var member= message.mentions.members.first();
+          member.ban().then((member) => {
+              message.channel.sendMessage("", {embed: {
+              author: {
+              },
+              title: ' :white_check_mark:  بسبب النشر ' + member.displayName + '  تم حظر لن يتم فك الحضر ال بعد إسبوع',
+              color: 490101,
+              }
+            });
+        }
+      ) 
+    }
+});
+
+
+
+
  client.login("NDI5MzgwNzYyNTM0Njc0NDMy.DaDznw.QxTgfCCu3C7Lv9DRnQZ8K0BgsfU"); //توكن حسابك
 
 
