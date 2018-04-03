@@ -29,6 +29,45 @@ client.user.setPresence({
 
 
 
+
+client.on("message", message => {
+    if (message.content === "-help") {
+     const embed = new Discord.RichEmbed() 
+         .setColor("#ffff00")
+         .setFooter('By KingDom')
+         .setThumbnail(message.author.avatarURL)
+         .setDescription(`
+  
+     **✨Administrationr Commands | اوامر الاداره✨**
+   - بيعطي كيك | -اطلع
+   - بيعطي باند  | -انصرف
+   - بيمسح الشات | -امسح
+   - بيعطي ميوت شات |-اسكت
+   - فك ميوت الشات | -احكي
+   - انشاء روم صوتي | -روم ص
+   -  انشاء روم كتابي |  -روم ك
+   - قفل الشات | -قفل الشات
+   -لفتح الشات | افتح الشات 
+   -
+   `)
+   message.author.sendEmbed(embed)
+   
+   }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {   
 if (message.author.boss) return;
 var prefix = ".";
