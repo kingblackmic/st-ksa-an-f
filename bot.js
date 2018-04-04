@@ -31,7 +31,7 @@ client.user.setPresence({
 
 
 client.on("message", message => {
-    if (message.content === "-help") {
+    if (message.content === "=help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#ffff00")
          .setFooter('By KingDom')
